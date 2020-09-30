@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <header>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/recommend.html">Recommend</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/recommend.html">Recommend</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+</header>
+<main>
+  <article>
+    <section >
+      <h1 class="header center">おすすめ作品一覧</h1>
+      <!-- 作品が少ない場合は表示しない。-->
+      <div class="row">
+        <div class="input-field col s12 m4">
+          <select>
+            <!-- girls_typeの数だけ必要 -->
+            <option value="" disabled selected>選択してください。</option>
+            <option value="1">ロリ</option>
+            <option value="2">JC,JK</option>
+            <option value="3">JD以上</option>
+          </select>
+          <label>タイプ</label>
+        </div>
+        <div class="input-field col s12 m4">
+          <select>
+            <!-- girls_typeの数だけ必要 -->
+            <option value="" disabled selected>選択してください。</option>
+            <option value="1">オプション1</option>
+            <option value="2">オプション2</option>
+            <option value="3">オプション3</option>
+          </select>
+          <label>予備1</label>
+        </div>
+        <div class="input-field col s12 m4">
+          <select>
+            <!-- girls_typeの数だけ必要 -->
+            <option value="" disabled selected>選択してください。</option>
+            <option value="1">オプション1</option>
+            <option value="2">オプション2</option>
+            <option value="3">オプション3</option>
+          </select>
+          <label>予備2</label>
+        </div>
+      </div>
+    </section>
+  </article>
+  <hr />
+  <div>
+    <!-- girls_typeがjc,jkになっているものだけここで表示-->
+    <div id="index-jc_jk">
+      <div class="parallax-container">
+        <div class="section no-pad-bot">
+          <div class="container">
+            <h1 class="header center teal-text text-lighten-2">JC,JK</h1>
+          </div>
+        </div>
+        <!-- ハイエース-->
+        <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+      </div>
+        <details class="container">
+          <summary>JC,JKを表示する</summary>
+          <!-- article の単位でループ -->
+          <article>
+            <section>
+              <!-- 作品名 -->
+              <h3 class="header art_name"></h3>
+              <div class="row">
+                <div class="col s12 m6">
+                  <!-- おすすめ商品を並べる説明-->
+                  <!-- small -->
+                  <div class="recommend_art"><p>合わせて楽しめます!</p>
+                  <!-- アダルトグッズ-->
+                  <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=petnanukidol-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B08726WDP7&linkId=f95eafb1bdc6a11e727dbe4db2774010"></iframe>
+                  <!-- 衣装-->
+                  <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=petnanukidol-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B085ZVKQZV&linkId=dcf987eb1b9ff35da1502cf6f0dd6c3a"></iframe>
+                  <!-- av -->
+                  </div>
+                </div>      
+                <div class="col s12 m6 art_embed_tag">
+                  <!-- art small embed-->
+                </div>
+              </div>
+            </section>
+          </article>
+        </details>
+    </div>
+
+  </div>
+</div>
+</main>
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
